@@ -1,10 +1,10 @@
-# Mô tả 
+## Mô tả 
 
 <img width="682" alt="Ảnh màn hình 2025-01-18 lúc 23 53 46" src="https://github.com/user-attachments/assets/15cfe636-8485-4144-b3cb-d9e8026ac2c1" />
 
 <img width="564" alt="Ảnh màn hình 2025-01-18 lúc 23 54 07" src="https://github.com/user-attachments/assets/4027e433-8db0-47dc-9310-ffab5e2db8fb" />
 
-# Giải pháp 
+## Giải pháp 
 - Sau khi em đọc qua một lượt code thì em thấy bài này sử dụng `n=p*p*q` không phải là một dạng mô-đun RSA tiêu chuẩn `n=p*p`, mà là một dạng mô-đum đặc biệt .Vì vậy em cần phân tích cái mô-đum đặc biệt này để tìm ra q và p và sử dụng hint để giải d và khôi phục flag.
 - Ngồi mò 1 hồi thì em không thể tính toán q và p từ mô-đum `n=p*p*q`. Vì vậy em đi search về bài này thì may mắn là em thấy 1 link nó có cả solution  https://www.cnblogs.com/LynneHuan/p/14725645.html
   
