@@ -51,7 +51,7 @@ d = inverse(e, phi_n)
 m = pow(c, d, n)  
 flag = long_to_bytes(m)  
 
-print(f"Flag: {flag.decode()}")
+print(f"Flag: {flag()}")
 ```
 
   
