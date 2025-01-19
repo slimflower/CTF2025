@@ -2,7 +2,7 @@
 
 <img width="576" alt="Ảnh màn hình 2025-01-19 lúc 19 30 51" src="https://github.com/user-attachments/assets/6f5e6c32-d25f-471c-8a83-2776650f5999" />
 
-# Giải pháp 
+## Giải pháp 
 - Đầu tiên em sẽ phân tích code trước. Thì bài này sử dụng mô-đum tiêu chuẩn là `n=p*p` và nó liên quan đến RSA,hàm bậc 2 và AES .
 - Các tham số G,p,q là các số nguyên tố ngẫu nhiên với G là 256bit và p,q là 512bit và mô-đum `n=p*q`
 - Ta có hàm bậc 2 là P_x(x)= x**2 + b * x + c với b,c là các số ngẫu nhiên 64bit
