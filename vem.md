@@ -9,7 +9,7 @@
 - Các tham số G,p,q là các số nguyên tố ngẫu nhiên với G là 256bit và p,q là 512bit và mô-đum `n=p*q`
 - Ta có hàm bậc 2 là P_x(x)= x**2 + b * x + c với b,c là các số ngẫu nhiên 64bit
 - Khi đó em có giá trị `gift(a)=G**P_x(a)*mod(n)`. Với từng giá trị của a thì cho ra được 1 hàm bậc 2 P_x(A) và một giá trị gift(a).Và msg được mã hoá với key bằng thuật toán AES trong chế độ ECB. Key được tính thông qua hàm `pow(G, 2*MSG1 * MSG2, N)` và MSG1 và MSG2 là 2 giá trị đã cho sẵn .
-- Vậy bây giờ để khai thác vài này và tìm flag thì em sẽ khai thác gift trước . Truy cập `nc 36.50.177.41 50103` và tính các giá trị gift ngẫu nhiên em chọn 0,1,-1 và tìm enc_flag  thì bây giờ em đã có các giá trị G(0),G(1),G(-1).
+- Vậy bây giờ để khai thác vài này và tìm flag thì em sẽ khai thác gift trước . Tính các giá trị gift ngẫu nhiên em chọn 0,1,-1 và tìm enc_flag  thì bây giờ em đã có các giá trị G(0),G(1),G(-1).
 
 <img width="580" alt="Ảnh màn hình 2025-01-19 lúc 19 51 00" src="https://github.com/user-attachments/assets/1196d9ca-c438-4211-91b2-fc66a4d9b5ba" />
 
