@@ -53,7 +53,6 @@ flag = long_to_bytes(m)
 
 print(f"Flag: {flag.decode()}")
 ```
-<img width="424" alt="Ảnh màn hình 2025-01-19 lúc 13 36 27" src="https://github.com/user-attachments/assets/3d45fb8e-6cc6-4d87-a02d-940590bf2025" />
 
   
 - Flag : `KCSC{solv1ng_equ4ti0ns_with_r3sult4nts_is_f4n}`
