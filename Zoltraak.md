@@ -5,12 +5,14 @@
 <img width="564" alt="Ảnh màn hình 2025-01-18 lúc 23 54 07" src="https://github.com/user-attachments/assets/4027e433-8db0-47dc-9310-ffab5e2db8fb" />
 
 # Giải pháp 
-- Sau khi em đọc qua một lượt code thì em thấy bài này `n=p*p*q` nó khác với các bài khác là `n=p*q` và khoá d là nghịch đảo mô-đum của e mũ p*(p-1)*(q-1).
-- Ngồi mò 1 hồi thì em không thể giải ra vì vậy em đi search về bài này thì may mắn là em thấy 1 link nó có cả solution  https://www.cnblogs.com/LynneHuan/p/14725645.html
+- Sau khi em đọc qua một lượt code thì em thấy bài này sử dụng `n=p*p*q` không phải là một dạng mô-đun RSA tiêu chuẩn `n=p*p`, mà là một dạng mô-đum đặc biệt .Vì vậy em cần phân tích cái mô-đum đặc biệt này để tìm ra q và p và sử dụng hint để giải d và khôi phục flag.
+- Ngồi mò 1 hồi thì em không thể tính toán q và p từ mô-đum `n=p*p*q`. Vì vậy em đi search về bài này thì may mắn là em thấy 1 link nó có cả solution  https://www.cnblogs.com/LynneHuan/p/14725645.html
   
 <img width="1089" alt="Ảnh màn hình 2025-01-19 lúc 00 01 20" src="https://github.com/user-attachments/assets/9a305ac0-3428-45cf-86f2-7749c07fb7db" />
 
-- Bây giờ em chỉ cần copy và đưa n,c,hint,e của đề mình và giải
+- Sau khi tham khảo solution bài trên thì em phân tích được để phân tích tìm ra q với p em cần sử dụng `hint=pow(d, e, n)` để tạo mối liên quan đến `p**2` thông qua `mod(p*(p-1)*(q-1))`.
+- Sau đó em xây dựng `x = hint * pow(e, e) - 1` với mục đích để làm p thành ước chung lớn nhất sau đó em tìm p bằng hàm `p=gcd(n,x)` là ước chung của n và x.
+- Và bây giờ em tìm q thông qua `q= n//(p**2)`. Khi đã tìm được q và p thì em tính khoá d và tính được m(flag) thông qua `m= pow(c, d, n)` và chuyển m từ số nguyên sang kí tự để hiện flag vì ban đầu m bị chuyển từ byte sang long của flag.
 
 ```py
 c = 216895836421936226664808806038131495725544658675106485670550453429609078893908601117272164909327632048129546753076380379045793859323244310633521321055388974634549104918284811813205866773238823220320222756056839297144222443834324484452750837978501262424186119512949111339142374067658940576220209924539508684423305539352188419127746551691195133913843198343764965016833190033138825402951884225991852311634388045499747652928427089105006744062452013466170009819761589
