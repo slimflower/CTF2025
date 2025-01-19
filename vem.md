@@ -35,5 +35,4 @@ from Crypto.Cipher import AES
 cipher = AES.new(key, AES.MODE_ECB)
 print(cipher.decrypt(c))
 ```
-- Với c=bytes.fromhex(enc_flag) để chuyển đổi từ byte sang hex vì ban đầu sau khi bị mã hoá enc_flag tra về kiểu hex. Sau khi chạy code thì em tìm được flag
 - Flag : `KCSC{Congr4tulati0n_to_you_0n_5olving_chall_lor:)))}`
