@@ -1,6 +1,4 @@
-# Mô tả 
-
-<img width="603" alt="Ảnh màn hình 2025-01-19 lúc 19 30 13" src="https://github.com/user-attachments/assets/6f45135d-a5f3-49a7-89f5-b6dfb3c3077d" />
+## Mô tả 
 
 <img width="576" alt="Ảnh màn hình 2025-01-19 lúc 19 30 51" src="https://github.com/user-attachments/assets/6f5e6c32-d25f-471c-8a83-2776650f5999" />
 
