@@ -1,6 +1,5 @@
 ## Mô tả 
 
-<img width="682" alt="Ảnh màn hình 2025-01-18 lúc 23 53 46" src="https://github.com/user-attachments/assets/15cfe636-8485-4144-b3cb-d9e8026ac2c1" />
 
 <img width="564" alt="Ảnh màn hình 2025-01-18 lúc 23 54 07" src="https://github.com/user-attachments/assets/4027e433-8db0-47dc-9310-ffab5e2db8fb" />
 
