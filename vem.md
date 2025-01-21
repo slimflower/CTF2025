@@ -3,7 +3,7 @@
 <img width="576" alt="Ảnh màn hình 2025-01-19 lúc 19 30 51" src="https://github.com/user-attachments/assets/6f5e6c32-d25f-471c-8a83-2776650f5999" />
 
 ## Giải pháp 
-- Đầu tiên em sẽ phân tích code trước. Thì bài này sử dụng mô-đum tiêu chuẩn là `n=p*p` và nó liên quan đến RSA,hàm bậc 2 và AES .
+- Đầu tiên em sẽ phân tích code trước. Thì bài này sử dụng mô-đum tiêu chuẩn là `n=p*q` và nó liên quan đến RSA,hàm bậc 2 và AES .
 - Các tham số G,p,q là các số nguyên tố ngẫu nhiên với G là 256bit và p,q là 512bit và mô-đum `n=p*q`
 - Ta có hàm bậc 2 là P_x(x)= x**2 + b * x + c với b,c là các số ngẫu nhiên 64bit
 - Khi đó em có giá trị `gift(a)=G**P_x(a)*mod(n)`. Với từng giá trị của a thì cho ra được 1 hàm bậc 2 P_x(A) và một giá trị gift(a).Và msg được mã hoá với key bằng thuật toán AES trong chế độ ECB. Key được tính thông qua hàm `pow(G, 2*MSG1 * MSG2, N)` và MSG1 và MSG2 là 2 giá trị đã cho sẵn .
